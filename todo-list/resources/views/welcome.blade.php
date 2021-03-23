@@ -5,13 +5,10 @@
     </head>
 
     <body>
-        <div id="app">
-            
-
-            <example-component></example-component>
-
-        
+        <div id="app">           
+            <register-page></register-page>
         </div>
+        
         <script src="js/app.js"></script>
     </body>
 </html>
