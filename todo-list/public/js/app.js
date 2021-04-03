@@ -1868,6 +1868,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -1876,7 +1877,7 @@ __webpack_require__.r(__webpack_exports__);
         password: '',
         password_confirmation: ''
       },
-      errors: []
+      errors: ""
     };
   },
   methods: {
@@ -6451,7 +6452,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".register[data-v-df7d9286] {\n  background-image: linear-gradient(to right top, #5ab3d3, #00a5f0, #0090ff, #676cff, #bc12eb);\n  height: 100vh;\n  width: 100vw;\n  display: flex;\n}\n.register_window[data-v-df7d9286] {\n  display: flex;\n  flex-direction: column;\n  position: fixed;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  border-radius: 5px;\n}\n.register__info[data-v-df7d9286] {\n  display: flex;\n  flex-direction: column;\n  background-color: #242156;\n  padding: 30px 20px;\n}\n.register__info__span[data-v-df7d9286] {\n  font-size: 18px;\n  color: white;\n  font-weight: 700;\n  text-align: center;\n  font-family: \"Helvetica Neue\", Helvetica;\n}\n.register__content[data-v-df7d9286] {\n  display: flex;\n  flex-direction: column;\n  padding: 40px;\n  background-color: #292967;\n}\n.register__content input[data-v-df7d9286] {\n  height: 30px;\n  border-radius: 5px;\n  border: 0px;\n  margin-bottom: 25px;\n  padding: 10px;\n}\n.register__content input[data-v-df7d9286]:focus {\n  outline: none;\n}\n.register_button[data-v-df7d9286] {\n  margin-left: auto;\n  padding: 15px;\n  border: 0px;\n  background-color: #14a014;\n  color: white;\n  cursor: pointer;\n  border-radius: 5px;\n  font-weight: 700;\n}\n.logo[data-v-df7d9286] {\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n  width: 100%;\n  margin-top: 50px;\n}\n.logo__image[data-v-df7d9286] {\n  width: 128px;\n  height: 128px;\n}\n.logo__text[data-v-df7d9286] {\n  font-size: 90px;\n  font-weight: 700;\n  margin-left: 20px;\n  pointer-events: none;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".register[data-v-df7d9286] {\n  background-image: linear-gradient(to right top, #5ab3d3, #00a5f0, #0090ff, #676cff, #bc12eb);\n  height: 100vh;\n  width: 100vw;\n  display: flex;\n}\n.register_window[data-v-df7d9286] {\n  display: flex;\n  flex-direction: column;\n  position: fixed;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  border-radius: 5px;\n}\n.register__info[data-v-df7d9286] {\n  display: flex;\n  flex-direction: column;\n  background-color: #242156;\n  padding: 30px 20px;\n}\n.register__info__span[data-v-df7d9286] {\n  font-size: 18px;\n  color: white;\n  font-weight: 700;\n  text-align: center;\n  font-family: \"Helvetica Neue\", Helvetica;\n}\n.register__content[data-v-df7d9286] {\n  display: flex;\n  flex-direction: column;\n  padding: 40px;\n  background-color: #292967;\n}\n.register__content input[data-v-df7d9286] {\n  height: 30px;\n  border-radius: 5px;\n  border: 0px;\n  margin-bottom: 25px;\n  padding: 10px;\n}\n.register__content input[data-v-df7d9286]:focus {\n  outline: none;\n}\n.register_button[data-v-df7d9286] {\n  margin-left: auto;\n  padding: 15px;\n  border: 0px;\n  background-color: #14a014;\n  color: white;\n  cursor: pointer;\n  border-radius: 5px;\n  font-weight: 700;\n}\n.register__errors[data-v-df7d9286] {\n  color: white;\n  margin-bottom: 20px;\n}\n.logo[data-v-df7d9286] {\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n  width: 100%;\n  margin-top: 50px;\n}\n.logo__image[data-v-df7d9286] {\n  width: 128px;\n  height: 128px;\n}\n.logo__text[data-v-df7d9286] {\n  font-size: 90px;\n  font-weight: 700;\n  margin-left: 20px;\n  pointer-events: none;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -37921,6 +37922,19 @@ var render = function() {
       _vm._m(1),
       _vm._v(" "),
       _c("form", { staticClass: "register__content" }, [
+        _vm.errors
+          ? _c("span", {
+              staticClass: "register__errors",
+              domProps: {
+                textContent: _vm._s(
+                  Object.values(_vm.errors)
+                    .flat()
+                    .join()
+                )
+              }
+            })
+          : _vm._e(),
+        _vm._v(" "),
         _c("input", {
           directives: [
             {
