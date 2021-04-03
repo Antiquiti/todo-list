@@ -60,6 +60,11 @@
   font-weight: 700;
 }
 
+.register__errors {
+  color: white;
+  margin-bottom: 20px;
+}
+
 .logo {
   display: flex;
   flex-direction: row;

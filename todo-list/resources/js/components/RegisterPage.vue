@@ -12,6 +12,7 @@
             </div>
 
             <form class="register__content">
+                <span class="register__errors" v-if="errors" v-text="Object.values(errors).flat().join()"></span>
                 <input type="text" placeholder="Nazwa użytkownika" v-model="form.username" name="username">
                 <input type="password" placeholder="Hasło" v-model="form.password" name="password">
                 <input type="password" placeholder="Powtórz hasło" v-model="form.password_confirmation" name="password_confirmation">
@@ -31,7 +32,7 @@
                     password: '',
                     password_confirmation: ''
                 },
-                errors: []
+                errors: ""
             }
         },
         methods:
